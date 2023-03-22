@@ -3,11 +3,13 @@
 
 /*--| Color setup |--*/
 :root {
-  --primary: #3155e7;
-  --primary-dark: #2045d6;
+  --primary: #F2994B;
+  --primary-dark: #df773b;
   --black: #18181a;
   --gray-1: #788190;
   --gray-2: #d3d4db;
+  --purple: #BA7FE9;
+  --purple-dark: #9E75F5;
   --white: #f5f5f5;
 
 }
@@ -31,12 +33,13 @@ body {
 
 .btn-primary {
   background-color: var(--primary);
+  border: none;
 }
 .btn-primary:hover {
   background-color: var(--primary-dark);
 }
 
-.btn-outLine-secondary{ 
+.btn-outline-secondary{ 
   border: 1px solid var(--gray-2);
   color: var(--black);
 }
@@ -91,13 +94,13 @@ section.hero{
 
 section.hero .text{
   font-weight: 800;
-  font-size: 48px;
+  font-size: 51px;
   line-height: 73px;
   color: var(--black);
 }
 
 .buttons{
-  padding-top: 69px;
+  padding-top: 45px;
 }
 
 .buttons .btn{

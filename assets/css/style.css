@@ -22,7 +22,10 @@ body {
 }
 
 /*--| Setup components |--*/
-
+/* HTML */
+html {
+  scroll-behavior: smooth;
+}
 /* buttons */
 
 .btn {
@@ -70,6 +73,11 @@ body {
 
 /*--| Navbar |--*/
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 .navbar .btn-outline-dark {
   border: 1px solid var(--gray-2);
   font-weight: 500;
@@ -86,6 +94,11 @@ body {
   margin-left: 41px;
   font-size: 16px;
   color: var(--gray-1);
+}
+
+.navbar-collapse .nav-link:hover {
+  transition: var(--btn-transition) ;
+  color: var(--black);
 }
 
 .navbar-nav .nav-link.active {
@@ -206,31 +219,23 @@ section.pricing .btn {
   transition: all 0.2s;
 }
 
-/* Hover Effects on Card */
 
-@media (min-width: 992px) {
-  .pricing .card:hover {
-    margin-top: -.25rem;
-    margin-bottom: .25rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-  }
-}
 /*--| Information section |--*/
 section.information .text-information{
   padding: 134px 0;
 }
 
 section.information h5{
-  font-size: 42px;
+  font-size: 50px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 58px;
   color: var(--black);
 }
 
 section.information p{
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 300;
-  line-height: 28px;
+  line-height: 35px;
   color: var(--gray-1);
   padding-top: 20px;
 }
@@ -246,7 +251,7 @@ footer{
 }
 
 footer .icons a i{
-  font-size: 35px;
+  font-size: 40px;
   color: var(--gray-1);
 }
 
@@ -256,18 +261,12 @@ footer .icons a i:hover{
 }
 
 
-footer ul .nav-item{
-  font-weight: 500;
-  font-size: 17px;
-  color: var(--black);
-  line-height: 18px;
-}
-
 /*--| Responsive section |--*/
 @media (max-width: 991px){
   /*--| Navbar |--*/
- 
    .navbar-nav{
+    margin-top: 20px;
+
      display: flex;
      justify-content: center;
      align-items: center;
@@ -276,8 +275,7 @@ footer ul .nav-item{
      margin-left: 0px!important;
      margin-right: 0px!important;
      text-align: center;
-     font-size: 22px;
- 
+     font-size: 17px;
  
    }
  
@@ -309,7 +307,23 @@ footer ul .nav-item{
    .buttons .ms-3{
      margin-left: 0!important;
    }
- 
+
+   /*--| Section information |--*/
+
+  section.information .text-information{
+    padding: 0;
+  }
+
+  section.information .left{
+    padding-bottom: 100px!important;
+  }
+  
+  /* Hover Effects on Card */
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
  
  }
 
@@ -332,7 +346,6 @@ footer ul .nav-item{
   section.hero, section.setup, section.information{
     text-align: center;
   }
-
 
   /*--| Hero section |--*/
   section.hero img{
@@ -374,12 +387,37 @@ footer ul .nav-item{
     color: var(--gray-1);
     padding: 27px 0;
   }
+  /*--| Princing section |--*/
+  section.pricing {
+    padding: 50px;
+  }
+  /*--| Information section |--*/
+
+  section.information .info-1 {
+    padding: 30px 0;
+  }
+
+  section.information h5{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 35px;
+    color: var(--black);
+  }
+
+  section.information p{
+    padding: 10px 15px;
+    text-align: justify;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 35px;
+    color: var(--gray-1);
+  }
+
 
   /*--| Footer section |--*/
 
   footer{
     padding-top: 50px;
-    margin-bottom: 44px;
   }
 
   footer a{

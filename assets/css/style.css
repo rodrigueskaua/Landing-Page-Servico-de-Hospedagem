@@ -22,6 +22,17 @@ body {
 }
 
 /*--| Setup components |--*/
+
+/* Scrool bar */
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+
+}
+
 /* HTML */
 html {
   scroll-behavior: smooth;
@@ -68,11 +79,9 @@ html {
 
 .btn-outline-secondary:focus{ 
   background-color: var(--purple-dark);
-
 }
 
 /*--| Navbar |--*/
-
 .navbar {
   position: sticky;
   top: 0;
@@ -219,7 +228,6 @@ section.pricing .btn {
   transition: all 0.2s;
 }
 
-
 /*--| Information section |--*/
 section.information .text-information{
   padding: 134px 0;
@@ -260,30 +268,28 @@ footer .icons a i:hover{
   color: var(--gray-2);
 }
 
-
 /*--| Responsive section |--*/
 @media (max-width: 991px){
   /*--| Navbar |--*/
    .navbar-nav{
-    margin-top: 20px;
-
-     display: flex;
-     justify-content: center;
-     align-items: center;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
    }
    .navbar-collapse .nav-link {
-     margin-left: 0px!important;
-     margin-right: 0px!important;
-     text-align: center;
-     font-size: 17px;
+      margin-left: 0px!important;
+      margin-right: 0px!important;
+      text-align: center;
+      font-size: 17px;
  
    }
  
    .navbar .btn-outline-dark {
-     font-weight: 600;
-     font-size: 17px;
-     padding: 15px 30px;
-     margin-top: 13px;
+      font-weight: 600;
+      font-size: 17px;
+      padding: 15px 30px;
+      margin-top: 13px;
    }
  
  

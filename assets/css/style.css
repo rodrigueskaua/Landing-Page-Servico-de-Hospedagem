@@ -158,6 +158,133 @@ section.setup .desc p{
   margin: 0 auto;
 }
 
-section.setup{
-  
+section.information .text-information{
+  padding: 134px 0;
+}
+
+section.information h5{
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 48px;
+  color: var(--black);
+}
+
+section.information p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  color: var(--gray-1);
+  padding-top: 20px;
+}
+
+section.information .info-1{
+  padding: 183px 0;
+}
+
+/*--| Footer section |--*/
+
+footer{
+  padding-top: 250px;
+  margin-bottom: 44px;
+}
+
+footer a{
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--black);
+  line-height: 18px;
+}
+
+footer .copy{
+  margin-top: 32px;
+  font-size: 14px;
+  color: var(--gray-1);
+  line-height: 17px;
+  font-weight: 400;
+}
+
+/*--| Responsive section |--*/
+@media (max-width: 576px){
+
+  /*--| Navbar |--*/
+  .navbar  {
+    padding: 20px 0px;
+  }
+
+  .nav-link {
+    margin-left: 0px;
+  }
+
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var();
+  }
+  /*--| Sections |--*/
+  section.hero, section.setup, section.information{
+    text-align: center;
+  }
+
+
+  /*--| Hero section |--*/
+  section.hero img{
+    padding-top: 2.5rem;
+  }
+
+  section.hero .text{
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 53px;
+
+  }
+  .buttons .btn{
+    width: 100%;
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .buttons .ms-3{
+    margin-left: 0!important;
+  }
+
+  /*--| Setup section |--*/
+  section.setup {
+    padding: 50px 0;
+  }
+
+  section.setup .text-header h3 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--black);
+  }
+
+  section.setup .text-header p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--gray-1);
+    padding: 27px 0;
+  }
+
+  /*--| Footer section |--*/
+
+  footer{
+    padding-top: 50px;
+    margin-bottom: 44px;
+  }
+
+  footer a{
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--black);
+    line-height: 18px;
+  }
+
+  footer .copy{
+    margin-top: 32px;
+    font-size: 14px;
+    color: var(--gray-1);
+    line-height: 17px;
+    font-weight: 400;
+  }
 }

@@ -141,7 +141,7 @@ section.hero .text {
 /*--| Setup section |--*/
 
 section.setup {
-  padding: 240px 0;
+  padding: 50px 0;
 }
 
 section.setup .text-header h3 {
@@ -179,8 +179,47 @@ section.setup .desc p{
   margin: 0 auto;
 }
 
-/*--| Pricing section |--*/
+/*--| Information section |--*/
+section.information .text-information{
+  padding: 70px 0;
+}
 
+section.information h5{
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 58px;
+  color: var(--black);
+}
+
+section.information p{
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 35px;
+  color: var(--gray-1);
+  padding-top: 20px;
+}
+
+section.information .info-1{
+  padding: 40px 0;
+}
+
+/*--| Footer section |--*/
+
+footer{
+  padding: 0 20px;
+}
+
+footer .icons a i{
+  font-size: 40px;
+  color: var(--gray-1);
+}
+
+footer .icons a i:hover{
+  transition: var(--btn-transition);
+  color: var(--gray-2);
+}
+
+/*--| Pricing section |--*/
 section.pricing .card {
   border: none;
   border-radius: 1rem;
@@ -225,45 +264,6 @@ section.pricing .btn {
   transition: all 0.2s;
 }
 
-/*--| Information section |--*/
-section.information .text-information{
-  padding: 134px 0;
-}
-
-section.information h5{
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 58px;
-  color: var(--black);
-}
-
-section.information p{
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 35px;
-  color: var(--gray-1);
-  padding-top: 20px;
-}
-
-section.information .info-1{
-  padding: 183px 0;
-}
-
-/*--| Footer section |--*/
-
-footer{
-  padding: 0 20px;
-}
-
-footer .icons a i{
-  font-size: 40px;
-  color: var(--gray-1);
-}
-
-footer .icons a i:hover{
-  transition: var(--btn-transition);
-  color: var(--gray-2);
-}
 
 /*--| Responsive section |--*/
 @media (max-width: 991px){

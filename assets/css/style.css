@@ -180,9 +180,6 @@ section.setup .desc p{
 }
 
 /*--| Pricing section |--*/
-section.pricing {
-
-}
 
 section.pricing .card {
   border: none;
@@ -395,7 +392,7 @@ footer .icons a i:hover{
   }
   /*--| Princing section |--*/
   section.pricing {
-    padding: 50px;
+    padding: 20px;
   }
   /*--| Information section |--*/
 

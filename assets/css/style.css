@@ -184,6 +184,11 @@ section.information .text-information{
   padding: 70px 0;
 }
 
+section.information .info-1 .text-information{
+  padding: 70px 0 0 0;
+}
+
+
 section.information h5{
   font-size: 50px;
   font-weight: 700;
@@ -199,9 +204,6 @@ section.information p{
   padding-top: 20px;
 }
 
-section.information .info-1{
-  padding: 40px 0;
-}
 
 /*--| Footer section |--*/
 

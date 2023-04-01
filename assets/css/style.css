@@ -118,7 +118,7 @@ html {
 /*--| Hero section |--*/
 
 section.hero {
-  padding: 50px 0px;
+  padding: 20px 0px 50px 0px;
 }
 
 section.hero .text {

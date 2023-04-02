@@ -90,7 +90,7 @@ html {
   z-index: 5;
   bottom: 0;
   left: 0px;
-  position: sticky;
+  position: fixed;
 
 }
 .parallax1 > use {
@@ -279,6 +279,7 @@ section.information p{
 
 footer{
   padding: 0 20px;
+  padding-bottom: 40px;
 }
 
 footer .icons a i{
